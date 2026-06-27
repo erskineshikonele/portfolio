@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects — Erskine Brister Shikonele</title>
+<link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+</head>
+<body>
+
+<nav>
+  <div class="nav-logo">EBS://portfolio</div>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="skills.html">Skills</a>
+    <a href="experience.html">Experience</a>
+    <a href="projects.html">Projects</a>
+    <a href="education.html">Education</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+
+<main class="page">
+  <div class="page-header">
+    <div class="page-eyebrow">What I've built</div>
+    <h1 class="page-heading">Projects</h1>
+    <p class="page-sub">Full-stack applications, AI/ML research, and embedded hardware projects demonstrating end-to-end engineering.</p>
+  </div>
+
+  <!-- FEATURED AI PROJECT -->
+  <div style="margin-bottom:1.5rem;background:var(--card);border:2px solid var(--accent);border-radius:10px;padding:1.75rem">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:0.75rem;flex-wrap:wrap;gap:0.5rem">
+      <div style="display:flex;align-items:center;gap:0.75rem">
+        <div style="width:42px;height:42px;border-radius:8px;background:var(--accent-bg);display:flex;align-items:center;justify-content:center;flex-shrink:0">
+          <i class="ti ti-brain" aria-hidden="true" style="font-size:1.2rem;color:var(--accent)"></i>
+        </div>
+        <div>
+          <div style="font-size:0.68rem;font-weight:700;color:var(--accent);font-family:'Space Mono',monospace;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:0.2rem">Featured — AI Research Project</div>
+          <h2 style="font-size:1.1rem;font-weight:700;color:var(--text);letter-spacing:-0.01em">Credit Card Fraud Detection using Machine Learning</h2>
+        </div>
+      </div>
+      <span class="tag3" style="font-size:0.68rem;align-self:flex-start">Advanced Diploma · AI Module (EIARI4A)</span>
+    </div>
+
+    <p style="font-size:0.9rem;color:var(--muted);line-height:1.85;margin-bottom:1.1rem">
+      Developed and evaluated multiple machine learning models to detect fraudulent credit card transactions in real time. Working with a highly imbalanced Kaggle dataset of 284,807 transactions (only 0.17% fraud), the project compared six models — Logistic Regression, Random Forest, AdaBoost, CatBoost, XGBoost, and LightGBM — using stratified 70/15/15 train-validation-test splits and 5-fold cross-validation. <strong style="color:var(--text)">XGBoost achieved the best result with a test AUC of 0.9778</strong>, addressing the core challenge of extreme class imbalance that causes naive models to miss all fraud cases.
+    </p>
+
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:0.75rem;margin-bottom:1.1rem">
+      <div style="background:var(--bg3);border-radius:7px;padding:0.75rem;text-align:center">
+        <div style="font-family:'Space Mono',monospace;font-size:1.2rem;font-weight:700;color:var(--accent)">0.9778</div>
+        <div style="font-size:0.72rem;color:var(--muted);margin-top:0.15rem">XGBoost AUC</div>
+      </div>
+      <div style="background:var(--bg3);border-radius:7px;padding:0.75rem;text-align:center">
+        <div style="font-family:'Space Mono',monospace;font-size:1.2rem;font-weight:700;color:var(--accent)">284,807</div>
+        <div style="font-size:0.72rem;color:var(--muted);margin-top:0.15rem">Transactions analysed</div>
+      </div>
+      <div style="background:var(--bg3);border-radius:7px;padding:0.75rem;text-align:center">
+        <div style="font-family:'Space Mono',monospace;font-size:1.2rem;font-weight:700;color:var(--accent)">6</div>
+        <div style="font-size:0.72rem;color:var(--muted);margin-top:0.15rem">Models compared</div>
+      </div>
+    </div>
+
+    <div class="tags">
+      <span class="tag">Python</span>
+      <span class="tag">XGBoost</span>
+      <span class="tag">LightGBM</span>
+      <span class="tag">CatBoost</span>
+      <span class="tag">Random Forest</span>
+      <span class="tag">Scikit-learn</span>
+      <span class="tag">Pandas</span>
+      <span class="tag">Jupyter Notebook</span>
+      <span class="tag">PCA</span>
+      <span class="tag">Class Imbalance</span>
+      <span class="tag">AUC-ROC</span>
+    </div>
+  </div>
+
+  <div class="projects-grid">
+
+    <!-- PROJECT: AI FRAUD DETECTION -->
+    <div class="proj-card" onclick="window.open('https://github.com/erskineshikonele/credit-card-fraud-ml-pipeline','_blank')">
+      <div class="proj-header">
+        <div class="proj-icon"><i class="ti ti-brain" aria-hidden="true"></i></div>
+        <span class="proj-ext"><i class="ti ti-brand-github" aria-hidden="true"></i>&nbsp;View on GitHub</span>
+      </div>
+      <h3>Credit Card Fraud Detection — ML Pipeline</h3>
+      <p>End-to-end machine learning pipeline for detecting fraudulent credit card transactions from a dataset of 284,807 transactions (only 0.17% fraud). Tackled extreme class imbalance using SMOTE and compared multiple models to find the best-performing classifier.</p>
+      <div style="margin-bottom:0.75rem">
+        <div style="font-size:0.78rem;font-weight:600;color:var(--text);margin-bottom:0.4rem">Models compared</div>
+        <div class="tags" style="margin-bottom:0.5rem">
+          <span class="tag">Logistic Regression</span>
+          <span class="tag">Random Forest</span>
+          <span class="tag">AdaBoost</span>
+          <span class="tag">CatBoost</span>
+          <span class="tag">XGBoost</span>
+          <span class="tag">LightGBM</span>
+        </div>
+      </div>
+      <div class="tags">
+        <span class="tag2">Python</span>
+        <span class="tag2">Scikit-learn</span>
+        <span class="tag2">Pandas</span>
+        <span class="tag2">NumPy</span>
+        <span class="tag2">SMOTE</span>
+        <span class="tag2">Jupyter Notebook</span>
+        <span class="tag2">ROC-AUC</span>
+        <span class="tag2">PCA</span>
+      </div>
+    </div>
+
+    <!-- PROJECT: NEURAL NETWORK ESKOM -->
+    <div class="proj-card" onclick="window.open('https://github.com/erskineshikonele/neural-network-hyperparameter-tuning','_blank')">
+      <div class="proj-header">
+        <div class="proj-icon"><i class="ti ti-bolt" aria-hidden="true"></i></div>
+        <span class="proj-ext"><i class="ti ti-brand-github" aria-hidden="true"></i>&nbsp;View on GitHub</span>
+      </div>
+      <h3>Neural Network Hyperparameter Optimisation — Eskom Demand Forecasting</h3>
+      <p>Deep learning project using 43,824 hourly observations from the Eskom national electricity grid to predict South Africa's contracted electricity demand (MW). Multiple neural network architectures were trained and compared, with systematic hyperparameter tuning to reduce overfitting and improve generalisation across demand patterns.</p>
+      <div style="margin-bottom:0.75rem">
+        <div style="font-size:0.78rem;font-weight:600;color:var(--text);margin-bottom:0.4rem">What was optimised</div>
+        <div class="tags" style="margin-bottom:0.5rem">
+          <span class="tag">Network Depth &amp; Width</span>
+          <span class="tag">Learning Rate</span>
+          <span class="tag">Dropout Regularisation</span>
+          <span class="tag">Batch Size</span>
+          <span class="tag">Early Stopping</span>
+          <span class="tag">Loss &amp; MAE Tracking</span>
+        </div>
+      </div>
+      <div class="tags">
+        <span class="tag2">Python</span>
+        <span class="tag2">TensorFlow</span>
+        <span class="tag2">Keras</span>
+        <span class="tag2">Pandas</span>
+        <span class="tag2">NumPy</span>
+        <span class="tag2">Scikit-learn</span>
+        <span class="tag2">Matplotlib</span>
+        <span class="tag2">Jupyter Notebook</span>
+      </div>
+    </div>
+
+    <!-- PROJECT: SA LOTTO PREDICTOR -->
+    <div class="proj-card" onclick="window.open('https://erskineshikonele.github.io/sa-lotto-predictor','_blank')">
+      <div class="proj-header">
+        <div class="proj-icon"><i class="ti ti-chart-bar" aria-hidden="true"></i></div>
+        <span class="proj-ext"><i class="ti ti-external-link" aria-hidden="true"></i>&nbsp;Live demo</span>
+      </div>
+      <h3>SA Lotto Predictor — Statistical Analysis Dashboard</h3>
+      <p>Interactive web dashboard for analysing 1,131 draws of the South African National Lottery (2015–2026). Features six smart number-generation strategies weighted by hot numbers, overdue numbers, historical pairs, and frequency signals — with statistical scoring per pick.</p>
+      <div style="margin-bottom:0.75rem">
+        <div style="font-size:0.78rem;font-weight:600;color:var(--text);margin-bottom:0.4rem">Key features</div>
+        <div class="tags" style="margin-bottom:0.5rem">
+          <span class="tag">Hot / Overdue Analysis</span>
+          <span class="tag">Top Pairs Detection</span>
+          <span class="tag">Frequency Distribution</span>
+          <span class="tag">Statistical Scoring</span>
+          <span class="tag">Auto-update Pipeline</span>
+          <span class="tag">GitHub Actions CI</span>
+        </div>
+      </div>
+      <div class="tags">
+        <span class="tag2">Python</span>
+        <span class="tag2">Pandas</span>
+        <span class="tag2">NumPy</span>
+        <span class="tag2">BeautifulSoup</span>
+        <span class="tag2">HTML / CSS / JS</span>
+        <span class="tag2">Web Scraping</span>
+        <span class="tag2">GitHub Actions</span>
+        <span class="tag2">Data Engineering</span>
+      </div>
+    </div>
+
+    <!-- PROJECT: ESKOM GRID TRACKER -->
+    <div class="proj-card" onclick="window.open('https://erskineshikonele.github.io/eskom-grid-tracker/','_blank')">
+      <div class="proj-header">
+        <div class="proj-icon"><i class="ti ti-bolt" aria-hidden="true"></i></div>
+        <span class="proj-ext"><i class="ti ti-external-link" aria-hidden="true"></i>&nbsp;Live demo</span>
+      </div>
+      <h3>Eskom Grid Recovery Tracker</h3>
+      <p>Live dashboard tracking South Africa's electricity grid recovery using weekly data sourced automatically from official Eskom press releases. Monitors key metrics such as Energy Availability Factor (EAF) and load shedding status, with an email alert system that notifies subscribers when load shedding returns or EAF drops — the two leading warning signals.</p>
+      <div style="margin-bottom:0.75rem">
+        <div style="font-size:0.78rem;font-weight:600;color:var(--text);margin-bottom:0.4rem">Key features</div>
+        <div class="tags" style="margin-bottom:0.5rem">
+          <span class="tag">Live Grid Status</span>
+          <span class="tag">EAF Trend Charts</span>
+          <span class="tag">Load Shedding Alerts</span>
+          <span class="tag">Area Checker</span>
+          <span class="tag">Auto-update Pipeline</span>
+          <span class="tag">GitHub Actions CI</span>
+        </div>
+      </div>
+      <div style="margin-bottom:0.75rem">
+        <span class="tag3" style="font-size:0.68rem">✓ Deployed &amp; live</span>
+      </div>
+      <div class="tags">
+        <span class="tag2">HTML / CSS / JS</span>
+        <span class="tag2">Python</span>
+        <span class="tag2">GitHub Actions</span>
+        <span class="tag2">Data Engineering</span>
+        <span class="tag2">Web Scraping</span>
+        <span class="tag2">Email Alerts</span>
+      </div>
+    </div>
+
+    <!-- PROJECT 1: LIVE -->
+    <div class="proj-card" onclick="openLink('https://timeclockmangementsystem.wuaze.com/')">
+      <div class="proj-header">
+        <div class="proj-icon"><i class="ti ti-clock" aria-hidden="true"></i></div>
+        <span class="proj-ext"><i class="ti ti-external-link" aria-hidden="true"></i>&nbsp;Live demo</span>
+      </div>
+      <h3>Employee Attendance Management System</h3>
+      <p>Secure web-based platform to automate time tracking and HR workflows for a work-based learning programme. Employees log attendance securely while administrators gain full visibility, reporting, and user management through a role-based dashboard.</p>
+      <div style="margin-bottom:0.75rem">
+        <span class="tag3" style="font-size:0.68rem">✓ Deployed &amp; live</span>
+      </div>
+      <div class="tags">
+        <span class="tag2">PHP</span>
+        <span class="tag2">MySQL</span>
+        <span class="tag2">JavaScript</span>
+        <span class="tag2">HTML / CSS</span>
+        <span class="tag2">XAMPP</span>
+        <span class="tag2">MVC</span>
+        <span class="tag2">RBAC</span>
+      </div>
+    </div>
+
+    <!-- PROJECT 2 -->
+    <div class="proj-card">
+      <div class="proj-header">
+        <div class="proj-icon"><i class="ti ti-temperature" aria-hidden="true"></i></div>
+      </div>
+      <h3>Smart Environmental Monitoring System</h3>
+      <p>IoT-based environmental monitor built on ESP32, integrating multiple sensors to track temperature, humidity, and air quality in real time. Data is processed on-device with threshold-based alerting for abnormal readings.</p>
+      <div class="tags">
+        <span class="tag2">ESP32</span>
+        <span class="tag2">C</span>
+        <span class="tag2">Sensors</span>
+        <span class="tag2">IoT</span>
+        <span class="tag2">Arduino IDE</span>
+        <span class="tag2">Embedded</span>
+      </div>
+    </div>
+
+    <!-- PROJECT 3 -->
+    <div class="proj-card">
+      <div class="proj-header">
+        <div class="proj-icon"><i class="ti ti-radar" aria-hidden="true"></i></div>
+      </div>
+      <h3>Ultrasonic Distance Detection System</h3>
+      <p>Embedded system using ultrasonic sensors and microcontroller logic for precise non-contact distance measurement. Includes digital readout display and configurable threshold alerts for proximity detection use cases.</p>
+      <div class="tags">
+        <span class="tag2">Microcontroller</span>
+        <span class="tag2">C</span>
+        <span class="tag2">Ultrasonic</span>
+        <span class="tag2">Embedded</span>
+        <span class="tag2">Digital Systems</span>
+      </div>
+    </div>
+
+    <!-- PROJECT 4 -->
+    <div class="proj-card">
+      <div class="proj-header">
+        <div class="proj-icon"><i class="ti ti-traffic-lights" aria-hidden="true"></i></div>
+      </div>
+      <h3>Traffic Light Controller</h3>
+      <p>Finite state machine implementation of a traffic light system using microcontroller programming. Demonstrates real-time control logic, precise timing sequences, and state transition management for safety-critical systems.</p>
+      <div class="tags">
+        <span class="tag2">Microcontroller</span>
+        <span class="tag2">C</span>
+        <span class="tag2">FSM</span>
+        <span class="tag2">Digital Systems</span>
+        <span class="tag2">Real-time Control</span>
+      </div>
+    </div>
+
+  </div>
+
+  <div style="margin-top:2rem;padding:1.25rem 1.5rem;background:var(--accent-bg);border:1px solid rgba(26,107,255,0.2);border-radius:10px;display:flex;align-items:center;gap:0.875rem">
+    <i class="ti ti-info-circle" aria-hidden="true" style="font-size:1.1rem;color:var(--accent);flex-shrink:0"></i>
+    <p style="font-size:0.875rem;color:var(--muted);margin:0">More projects are in progress as part of the Advanced Diploma programme (2026), including advanced micro systems design and engineering research.</p>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <span class="footer-logo">EBS://portfolio</span>
+    <span>© 2026 Erskine Brister Shikonele · Johannesburg, ZA</span>
+  </div>
+</footer>
+
+<script src="assets/nav.js"></script>
+</body>
+</html>
